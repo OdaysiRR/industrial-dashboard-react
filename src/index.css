@@ -1,0 +1,50 @@
+/* 1. RESET Y CONFIGURACIÓN BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Evita problemas de tamaño con el padding */
+}
+
+body {
+  /* Fuente nativa de macOS para que se vea perfecto en Safari */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5; /* Gris claro profesional */
+  color: #1c1e21;
+  -webkit-font-smoothing: antialiased; /* Suavizado de fuente para Safari */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. DISEÑO DEL CONTENEDOR PRINCIPAL (MAIN) */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: flex-start; /* Alinea al inicio verticalmente */
+  padding: 40px 20px;
+}
+
+/* 3. ESTILOS PARA TÍTULOS GENERALES */
+h1, h2, h3 {
+  color: #050505;
+  letter-spacing: -0.5px;
+}
+
+/* 4. CONTENEDOR DE RESPONSIVIDAD */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 10px;
+  }
+}
+
+/* 5. CLASE PARA CONTENEDORES DE TARJETAS (CARDS) */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
